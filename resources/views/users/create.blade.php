@@ -55,7 +55,7 @@
 
                 <div class="form-group">
                     <label for="twitter">Twitter:</label>
-                    <input type="text" class="form-control" name="twitter" id="twitter" placeholder="https://twitter.com/Stydenet" value="{{ old('twitter') }}">
+                    <input type="text" class="form-control" name="twitter" id="twitter" placeholder="https://twitter.com/SimonMontoyaP3" value="{{ old('twitter') }}">
                 </div>
 
                 <h5>Habilidades</h5>

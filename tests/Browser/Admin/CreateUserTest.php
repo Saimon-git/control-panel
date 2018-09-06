@@ -21,7 +21,7 @@ class CreateUserTest extends DuskTestCase
         $this->browse(function (Browser $browser) use ($profession, $skillA, $skillB) {
             $browser->visit('usuarios/nuevo')
                 ->type('name', 'Duilio')
-                ->type('email', 'duilio@styde.net')
+                ->type('email', 'simonmontoya19@gmail.com')
                 ->type('password', 'laravel')
                 ->type('bio', 'Programador')
                 ->select('profession_id', $profession->id)
@@ -32,17 +32,17 @@ class CreateUserTest extends DuskTestCase
                 ->press('Crear usuario')
                 ->assertPathIs('/usuarios')
                 ->assertSee('Duilio')
-                ->assertSee('duilio@styde.net');
+                ->assertSee('simonmontoya19@gmail.com');
         });
 
         $this->assertCredentials([
             'name' => 'Duilio',
-            'email' => 'duilio@styde.net',
+            'email' => 'simonmontoya19@gmail.com',
             'password' => 'laravel',
             'role' => 'user',
         ]);
 
-        $user = User::findByEmail('duilio@styde.net');
+        $user = User::findByEmail('simonmontoya19@gmail.com');
 
         $this->assertDatabaseHas('user_profiles', [
             'bio' => 'Programador',

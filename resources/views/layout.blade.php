@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>@yield('title') - Styde.net</title>
+    <title>@yield('title') - Panel de Control</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -49,7 +49,7 @@
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">https://styde.net</span>
+        <span class="text-muted">Panel de control</span>
     </div>
 </footer>
 
